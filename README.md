@@ -44,5 +44,31 @@ mvn install:install-file -Dfile=C:\sqljdbc4.jar -DgroupId=com.microsoft.sqlserve
 
 mvn install:install-file -Dfile=E:\sts-project-space-2020\sqljdbc4-4.0.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc4 -Dversion=4.0 -Dpackaging=jar
 
+==================================
+-startup
+plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+-vm
+C:/Program Files/Java/jdk1.8.0_144/bin/javaw.exe
+-Dosgi.requiredJavaVersion=1.8
+-Xms256m
+-Xmx1024m
+-XX:+UseG1GC
+-XX:+UseStringDeduplication
+--add-modules=ALL-SYSTEM
+--launcher.library
+plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.1200.v20200508-1552
+-product
+org.springframework.boot.ide.branding.sts4
+--launcher.defaultAction
+openFile
+-vmargs
+-Dosgi.requiredJavaVersion=1.8
+-Xms256m
+-Xmx1024m
+-XX:+UseG1GC
+-XX:+UseStringDeduplication
+--add-modules=ALL-SYSTEM
+
+
 
 
